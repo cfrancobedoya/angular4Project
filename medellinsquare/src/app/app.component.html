@@ -10,6 +10,10 @@
   <hr />
   <!-- Se especifica de que no trae hasta que no esté listo -->
   <button [disabled]="!listo" (click)="hacerAlgo()">Click me!</button>
+  <hr/>
+  <input type="text" placeholder="Tu nombre" [(ngModel)]="nombre">
+  <br/>
+  Mi nombre es {{nombre}}
 </div>
 
 
