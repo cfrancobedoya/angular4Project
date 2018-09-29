@@ -8,9 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Medellinsquare';
   lugares: any = [
-    {nombre: 'Florería la gardenia'},
-    {nombre: 'Donas la pasaditas'},
-    {nombre: 'Veterinaria Huellitas Felices'}
+    {active: true, nombre: 'Florería la gardenia'},
+    {active: true, nombre: 'Donas la pasaditas'},
+    {active: true, nombre: 'Veterinaria Huellitas Felices'},
+    {active: false, nombre: 'Sushi Suhiroll'},
+    {active: true, nombre: 'Hotel la García'},
+    {active: false, nombre: 'Zapatería el Clavo'}
   ];
   constructor() {
   }
