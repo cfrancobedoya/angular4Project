@@ -6,16 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'medellinsquare';
-  a = 2;
-  b = 3;
-  listo = false;
-  nombre:string = '';
-
+  title = 'Medellinsquare';
+  lugares: any = [
+    {nombre: 'Florería la gardenia'},
+    {nombre: 'Donas la pasaditas'},
+    {nombre: 'Veterinaria Huellitas Felices'}
+  ];
   constructor() {
-    setTimeout(() => {
-      this.listo = true;
-    }, 3000);
   }
 
   hacerAlgo() {
